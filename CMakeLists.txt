@@ -15,11 +15,12 @@ if(NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES)
 endif()
 
 file(GLOB SOURCES "source/*.c")
+file(GLOB HEADERS "include/*.h")
 
-add_library( rngsse ${SOURCES} )
+add_library(rngsse ${SOURCES})
 
-INSTALL(TARGETS RNGSSELIB2
+INSTALL(FILES ${HEADERS} DESTINATION include)
+INSTALL(TARGETS rngsse
         RUNTIME DESTINATION bin COMPONENT Runtime
         LIBRARY DESTINATION lib COMPONENT Runtime
-        ARCHIVE DESTINATION lib COMPONENT Development
-)
+        ARCHIVE DESTINATION lib COMPONENT Development)

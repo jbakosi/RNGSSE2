@@ -14,6 +14,6 @@ if(NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES)
     "MinSizeRel" "RelWithDebInfo")
 endif()
 
-file(GLOB SOURCES "*.c")
+file(GLOB SOURCES "source/*.c")
 
 add_library( rngsse ${SOURCES} )

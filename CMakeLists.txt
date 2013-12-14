@@ -17,3 +17,9 @@ endif()
 file(GLOB SOURCES "source/*.c")
 
 add_library( rngsse ${SOURCES} )
+
+INSTALL(TARGETS RNGSSELIB2
+        RUNTIME DESTINATION bin COMPONENT Runtime
+        LIBRARY DESTINATION lib COMPONENT Runtime
+        ARCHIVE DESTINATION lib COMPONENT Development
+)

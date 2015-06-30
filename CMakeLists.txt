@@ -1,4 +1,4 @@
-# CMake buld for RNGSSE2
+# CMake build for RNGSSE2
 #
 # Author: J. Bakosi
 #

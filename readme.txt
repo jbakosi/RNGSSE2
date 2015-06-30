@@ -16,3 +16,5 @@ To compile all the examples in FORTRAN in the current directory, with use of the
 
   bash -c 'for i in *.f90; do gfortran -o ${i%????} $i -L../../lib -lrngsse; done'
 
+Copyright L.Yu. Barash and L.N. Shchur (2011)
+For more information on RNGSSE2 check out http://dx.doi.org/10.1016/j.cpc.2011.03.022.
